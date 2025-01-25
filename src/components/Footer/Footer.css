@@ -1,0 +1,110 @@
+/* Filename: Footer.css */
+.motherf{
+    background-color: #113ed0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    font-size: 16px;
+}
+.footer-container {
+    color: white; /* White text color */
+    padding: 20px; /* Padding around the footer */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-evenly; /* Space between sections */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    max-width: 1300px;
+}
+
+.footer-left {
+    flex: 1; /* Allow left section to take available space */
+    margin-right: 20px; /* Space to the right */
+}
+
+.footer-logo {
+    margin-bottom: 10px; /* Space below the logo */
+}
+
+.footer-logo  .logo {
+    width: 180px; /* Logo height */
+}
+
+.footer-description {
+    font-size: 0.9em; /* Smaller font size for description */
+    margin-top: 5px; /* Space above the description */
+    width: 19.5em;
+}
+
+.footer-center,
+.footer-links,
+.footer-support {
+    flex: 1; /* Allow center, right, and support sections to take available space */
+    margin: 0 0px; /* Space on the sides */
+}
+
+.footer-center h3,
+.footer-links h3,
+.footer-support h3,
+.connected h3 {
+    margin-bottom: 10px; /* Space below headers */
+    font-weight: 500;
+}
+
+.footer-center ul,
+.footer-links ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.footer-center li,
+.footer-links li {
+    margin-bottom: 1.5em; /* Space between list items */
+}
+
+.footer-support p,
+.connected p{
+    margin: 5px 0; /* Space above and below support contact details */
+    margin-bottom: 1.5em;
+    font-weight: 300;
+}
+
+.footer-socials {
+    display: flex; /* Flexbox for social icons */
+    justify-content: flex-start; /* Align icons to the left */
+    margin-top: 20px; /* Space above the icons */
+}
+.footer-socials a{
+    font-size: 17px;
+    border: 2px solid #fff;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon {
+    color: white; /* White icon color */
+    margin: 0 2px; /* Space between icons */
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.social-icon:hover {
+    color: orange; /* Change color on hover */
+}
+
+.footer-divider {
+    width: 100%; /* Full width for the horizontal line */
+    border: none; /* Remove default border */
+    border-top: 1px solid #fff; /* Darker line for the divider */
+    margin: 20px 0; /* Space above and below the line */
+}
+
+.footer-copyright {
+    text-align: center; /* Center align copyright text */
+    font-size: 14px; /* Font size for copyright */
+    margin-top: 10px; /* Space above copyright text */
+}

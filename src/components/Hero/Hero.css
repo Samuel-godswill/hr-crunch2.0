@@ -1,0 +1,132 @@
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: url('../../assets/hrcrunchbg.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensure both sides stretch to the same height */
+    width: 100%;
+    max-width: 1000px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 50%;
+    height: 100%; /* Ensure it takes full height */
+}
+
+.hero-text h1 {
+    font-size: 95px; 
+    font-weight: 900;
+}
+
+.hero-text p {
+    max-width: 800px;
+    margin: 10px 0 20px;
+    line-height: 1.4;
+    font-size: 19px; 
+    font-weight: 00;
+}
+
+.event-info {
+    margin-bottom: 2em;
+}
+
+.event-info span {
+    display: block;
+    margin: 5px 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.event-info .icon {
+    margin-right: 1em;
+    color: orange;
+    font-size: 19px;
+}
+
+.btn {
+    padding: 12px 30px; 
+    color: white; 
+    cursor: pointer; 
+    font-size: 18px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    display: flex; 
+    align-items: center; 
+    border: none;
+}
+
+.border-button {
+    background-color: transparent; 
+    border: 1px solid white; 
+    color: white; 
+    padding: 12px 30px; 
+}
+
+.border-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.countdown-container {
+    border: 3px solid white; 
+    border-radius: 30px; 
+    padding: 40px 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    max-width: 300px; 
+    height: 100%; /* Ensure it takes full height */
+    margin-top: 1.3em;
+}
+
+.countdown-container h3 {
+    font-size: 24px; 
+    margin-bottom: 1em; 
+}
+
+.countdown-container h3 span {
+    color: orange; 
+}
+
+.countdown {
+    display: flex; 
+    justify-content: space-around; 
+    width: 100%; 
+    margin: 2em 0; 
+}
+
+.countdown h1 {
+    font-size: 40px; 
+    margin: 0; 
+    text-align: center; 
+}
+
+.countdown span {
+    display: block; 
+    font-size: 14px; 
+    color: #fff; 
+    text-align: center; 
+}
+
+.ticket-icon {
+    width: 20px; 
+    height: 20px; 
+    margin-left: 10px; 
+}
+
+.full-background {
+    background-color: white; 
+    color: #000;
+}

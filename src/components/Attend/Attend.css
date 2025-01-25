@@ -1,0 +1,81 @@
+/* Filename: Attend.css */
+
+.attend-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Fixed 4 columns */
+    gap: 20px; /* Space between items */
+    width: 100%; /* Full width */
+    max-width: 1000px; /* Max width for larger screens */
+    margin-bottom: 5%;
+
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.image-item:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.image-item img {
+    width: 100%; /* Full width of the item */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    /* Removed the grey filter from here */
+}
+
+.image-name {
+    margin-top: 10px;
+    font-size: 0.9em; /* Smaller font size for names */
+}
+
+.previous-sponsors {
+    margin: 3em 0; /* Gap above and below */
+    text-align: center; /* Center the title */
+}
+
+.previous-sponsors h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    flex: 1; /* Take up remaining space */
+    height: 20px; /* Line height */
+    background-color: #d91717; /* Line color */
+    margin: 0 10px; /* Space between line and text */
+}
+
+.sponsor-logos {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-evenly; /* Space evenly */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Max width for larger screens */
+}
+
+.sponsor-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor-logo img {
+    height: 4em; /* Set height for sponsor logos */
+    width: auto; /* Maintain aspect ratio */
+}

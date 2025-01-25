@@ -1,0 +1,80 @@
+.day-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+    padding: 6% 20px 20px 20px; /* Reduced padding */
+    max-width: 600px; /* Reduced max width for a more compact layout */
+    margin: auto; /* Center the container */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.event-title {
+    font-size: 2em; /* Header size */
+    margin-bottom: 15px; /* Space below header */
+    color: #113ed0; /* Header color */
+    text-align: center; /* Center align text */
+}
+
+.day-switch {
+    display: flex; /* Flexbox for switch layout */
+    margin-bottom: 20px; /* Space below switch */
+}
+
+.day-option {
+    padding: 10px 30px; /* Padding for switch options */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin: 0 5px; /* Space between options */
+    font-weight: bold; /* Bold text for options */
+    border: 1px solid rgba(241, 179, 7, 0.9);
+    color: #333; /* Default text color */
+}
+
+.day-option.active {
+    background-color: #113ed0; /* Active option background color */
+    color: white; /* Active option text color */
+    border: none;
+}
+
+.day-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Opaque background for the day box */
+    padding: 20px; /* Padding inside the day box */
+    width: 100%; /* Full width */
+    margin-top: 20px; /* Space above the day box */
+    border: 3px solid black;
+}
+
+.day-header {
+    font-size: 1.5em; /* Header size */
+    margin: 10px 0; /* Space above and below header */
+    color: #fff; /* Header color */
+    text-align: left; /* Align text to the left */
+    border-radius: 5px; /* Rounded corners */
+}
+.something{
+    background-color: #113ed0;
+    padding: 10px;
+}
+.day-subheader {
+    font-size: 1.2em; /* Subheader size */
+    margin: 10px 0; /* Space above and below subheader */
+    color: #fff; /* Subheader color */
+    text-align: left; /* Align text to the left */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.schedule-list {
+    list-style-type: disc; /* Bullet points for list items */
+    padding-left: 20px; /* Indentation for list items */
+    margin: 0; /* Remove default margin */
+    cursor: grab;
+}
+
+.schedule-item {
+    margin: 5px 0; /* Space between schedule items */
+    text-align: left; /* Align text to the left */
+    padding: 5px; /* Padding inside schedule items */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+

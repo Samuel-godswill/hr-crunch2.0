@@ -1,0 +1,32 @@
+.speakers-container {
+    background-color: #113ed0; /* Set background color */
+    color: white; /* Text color */
+    padding: 30px; /* Padding around the content */
+    text-align: left; /* Align text to the left */
+}
+
+.speakers-content {
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1110px;
+}
+
+.speakers-content h2 {
+    font-size: 40px; /* Font size for the title */
+    color: white;
+    margin-bottom: 0.4em;
+    font-weight: 500;
+}
+
+.speakers-content h2 span {
+    color: orange; /* Color for the span */
+}
+
+.speakers-content p {
+    max-width: 720px; /* Maximum width for the paragraph */
+    line-height: 1.5; /* Line height for readability */
+}

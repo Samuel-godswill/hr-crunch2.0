@@ -1,0 +1,75 @@
+nav {
+    width: 100%;
+    height: 80px;
+    color: #fff;
+    padding: 4px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.logo {
+    width: 180px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center; 
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-weight: 300;
+}
+
+.ticket-button {
+    background-color: #FFF; 
+    color: #000;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    font-weight: 400;
+
+}
+
+.ticket-button img {
+    width: 20px; 
+    height: 20px;
+    margin-left: 10px; 
+}
+
+.sponsor-button {
+    background-color: transparent; 
+    color: white; 
+    border: 2px solid white;
+    border-radius: 50px; 
+    padding: 15px 24px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    display: flex; 
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: -1.4em; /* Added margin for spacing */
+    font-weight: 400;
+
+}
+
+.sponsor-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.dark-nav {
+    background-color: #113ed0;
+    transition: 0.5s;
+}

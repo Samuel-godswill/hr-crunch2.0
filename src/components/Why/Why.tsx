@@ -1,8 +1,6 @@
-// Filename: Why.tsx
-
 import React from 'react';
 import './Why.css';
-import yourImage from '../../assets/bg.jpg'; // Replace with your image path
+import yourImage from '../../assets/bg.jpg';
 
 const Why: React.FC = () => {
   return (

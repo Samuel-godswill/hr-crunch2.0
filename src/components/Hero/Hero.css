@@ -13,7 +13,7 @@
 .hero-content {
     display: flex;
     justify-content: space-between;
-    align-items: stretch; /* Ensure both sides stretch to the same height */
+    align-items: stretch;
     width: 100%;
     max-width: 1000px;
 }
@@ -23,7 +23,7 @@
     flex-direction: column;
     align-items: flex-start;
     max-width: 50%;
-    height: 100%; /* Ensure it takes full height */
+    height: 100%; 
 }
 
 .hero-text h1 {
@@ -87,7 +87,7 @@
     align-items: center; 
     justify-content: center; 
     max-width: 300px; 
-    height: 100%; /* Ensure it takes full height */
+    height: 100%; 
     margin-top: 1.3em;
 }
 

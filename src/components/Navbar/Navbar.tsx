@@ -1,5 +1,3 @@
-// Filename: Navbar.js
-
 import './Navbar.css';
 import logo from '../../assets/logo.png';
 import ticket from '../../assets/ticket.png';

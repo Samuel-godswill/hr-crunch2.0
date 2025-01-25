@@ -1,7 +1,5 @@
-// Filename: Ticket.tsx
-
 import React, { useState } from 'react';
-import './Ticket.css'; // Import your CSS file for styling
+import './Ticket.css';
 
 const tickets = [
     { id: 1, name: 'Student Ticket', price: '₦5,000' },

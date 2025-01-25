@@ -1,6 +1,3 @@
-// Filename: Hero.js
-
-import React from "react";
 import ticket from "../../assets/ticket.png";
 import "./Hero.css";
 import ThreeScene from "./ThreeScene";

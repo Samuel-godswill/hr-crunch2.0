@@ -1,13 +1,9 @@
-// Filename: Attend.js
-
-import React from 'react';
 import './Attend.css';
 import mtn from '../../assets/mtn.png'
 import gpfoods from '../../assets/gpfoods.png'
 import uac from '../../assets/UAC-SMART-LOGO-01.png'
 import pade from '../../assets/Pade HR.png'
 
-// Array of images and names
 const images = [
   { src: '/src/assets/Toniloba Itabiyi.jpeg', name: 'Toniloba Itabiyi' },
   { src: '/src/assets/Daniel Emeka.jpeg', name: 'Daniel Emeka' },
@@ -26,7 +22,6 @@ const images = [
   { src: '/src/assets/Kofoworola Kayode.jpeg', name: 'Kofoworola Kayode' },
   { src: '/src/assets/Ngozi Chukwu.jpeg', name: 'Ngozi Chukwu' },
 //   { src: '/src/assets/Ngozi Nwabueze.jpeg', name: 'Ngozi Nwabueze' },
-  // Add more images as needed
 ];
 
 const Attend = () => {

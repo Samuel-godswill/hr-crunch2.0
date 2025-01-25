@@ -1,5 +1,3 @@
-// Filename: ThreeScene.tsx
-
 import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader';

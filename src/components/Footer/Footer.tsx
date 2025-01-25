@@ -1,5 +1,3 @@
-// Filename: Footer.tsx
-
 import React from 'react';
 import './Footer.css';
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa';

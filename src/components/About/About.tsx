@@ -1,5 +1,3 @@
-// Filename: About.js
-
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import './About.css';
@@ -15,7 +13,7 @@ const About = () => {
     const rect = aboutSection.getBoundingClientRect();
     if (rect.top < window.innerHeight && rect.bottom > 0) {
       setIsVisible(true);
-      window.removeEventListener('scroll', handleScroll); // Remove listener after visibility is set
+      window.removeEventListener('scroll', handleScroll); 
     }
   };
 

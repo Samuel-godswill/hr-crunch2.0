@@ -1,7 +1,5 @@
-// Filename: Newsletter.tsx
-
 import React from 'react';
-import './Newsletter.css'; // Import your CSS file for styling
+import './Newsletter.css';
 
 const Newsletter: React.FC = () => {
   return (

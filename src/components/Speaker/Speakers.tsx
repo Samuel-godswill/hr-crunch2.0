@@ -1,5 +1,3 @@
-// Filename: Speakers.js
-
 import './Speakers.css';
 
 const Speakers = () => {

@@ -1,78 +1,76 @@
-/* Filename: Why.css */
-
 .why-container {
-    display: flex; /* Use flexbox for layout */
-    height: auto; /* Height will adjust based on content */
-    background-color: #113ed0; /* Background color */
-    padding: 40px 0; /* Padding for top and bottom */
+    display: flex; 
+    height: auto; 
+    background-color: #113ed0; 
+    padding: 40px 0; 
     font-weight: 300;
 }
 
 .content-container {
-    display: flex; /* Use flexbox for layout */
+    display: flex; 
     justify-content: space-between;
-    max-width: 1200px; /* Maximum width for the content */
-    width: 100%; /* Full width */
-    margin: 0 auto; /* Center the content */
+    max-width: 1200px; 
+    width: 100%; 
+    margin: 0 auto; 
 }
 
 .info-container {
     width: 60%;
-    padding: 20px; /* Padding around the content */
+    padding: 20px; 
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: center; /* Center content vertically */
-    color: white; /* Text color */
+    flex-direction: column;
+    justify-content: center;
+    color: white; 
 }
 
 h1 {
-    font-size: 2.6em; /* Main header size */
-    margin-bottom: 10px; /* Space below the header */
+    font-size: 2.6em; 
+    margin-bottom: 10px; 
 }
 h1 span{
-    color: orange; /* Subheader color */
+    color: orange; 
 }
 
 h2 {
-    font-size: 1.7em; /* Subheader size */
-    margin-bottom: 30px; /* Space below the subheader */
+    font-size: 1.7em; 
+    margin-bottom: 30px; 
     font-weight: 300;
 }
 
 .info-section {
-    margin-bottom: 20px; /* Space between sections */
+    margin-bottom: 20px; 
 }
 
 .info-section h3 {
-    font-size: 1.2em; /* Section header size */
-    margin-bottom: 5px; /* Space below section header */
+    font-size: 1.2em;
+    margin-bottom: 5px; 
 }
 
 .info-section p {
-    font-size: 1em; /* Paragraph size */
-    line-height: 1.5; /* Line height for readability */
+    font-size: 1em; 
+    line-height: 1.5; 
 }
 
 .image-container {
     width: 33%;
-    display: flex; /* Use flexbox for centering */
-    align-items: center; /* Center image vertically */
-    justify-content: center; /* Center image horizontally */
-    overflow: hidden; /* Prevent overflow */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    overflow: hidden;
 }
 
 .bouncing-image {
-    height: 70%; /* Make image 80% of the height of the left container */
-    animation: bounce 3s infinite; /* Bouncing animation */
+    height: 70%; 
+    animation: bounce 3s infinite; 
 }
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0); /* Start position */
+        transform: translateY(0); 
     }
     40% {
-        transform: translateY(-20px); /* Bounce up */
+        transform: translateY(-20px); 
     }
     60% {
-        transform: translateY(-15px); /* Bounce down */
+        transform: translateY(-15px); 
     }
 }

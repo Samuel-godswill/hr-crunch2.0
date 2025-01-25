@@ -1,7 +1,4 @@
-// Filename: Testimonials.tsx
-
-import React from 'react';
-import './Testimonials.css'; // Import your CSS file for styling
+import './Testimonials.css'; 
 
 const testimonials = [
     {

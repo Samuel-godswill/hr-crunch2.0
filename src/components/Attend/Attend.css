@@ -1,5 +1,3 @@
-/* Filename: Attend.css */
-
 .attend-container {
     display: flex;
     flex-direction: column;
@@ -10,10 +8,10 @@
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Fixed 4 columns */
-    gap: 20px; /* Space between items */
-    width: 100%; /* Full width */
-    max-width: 1000px; /* Max width for larger screens */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+    width: 100%; 
+    max-width: 1000px;
     margin-bottom: 5%;
 
 }
@@ -23,30 +21,29 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    transition: transform 0.3s ease; /* Smooth scaling effect */
-    overflow: hidden; /* Prevent overflow */
+    transition: transform 0.3s ease; 
+    overflow: hidden; 
 }
 
 .image-item:hover {
-    transform: scale(1.05); /* Scale up on hover */
+    transform: scale(1.05); 
 }
 
 .image-item img {
-    width: 100%; /* Full width of the item */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    /* Removed the grey filter from here */
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .image-name {
     margin-top: 10px;
-    font-size: 0.9em; /* Smaller font size for names */
+    font-size: 0.9em; 
 }
 
 .previous-sponsors {
-    margin: 3em 0; /* Gap above and below */
-    text-align: center; /* Center the title */
+    margin: 3em 0; 
+    text-align: center; 
 }
 
 .previous-sponsors h3 {
@@ -56,17 +53,17 @@
 }
 
 .line {
-    flex: 1; /* Take up remaining space */
-    height: 20px; /* Line height */
-    background-color: #d91717; /* Line color */
-    margin: 0 10px; /* Space between line and text */
+    flex: 1; 
+    height: 20px; 
+    background-color: #d91717; 
+    margin: 0 10px; 
 }
 
 .sponsor-logos {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-evenly; /* Space evenly */
-    width: 100%; /* Full width */
-    max-width: 1200px; /* Max width for larger screens */
+    display: flex; 
+    justify-content: space-evenly; 
+    width: 100%; 
+    max-width: 1200px; 
 }
 
 .sponsor-logo {
@@ -76,6 +73,6 @@
 }
 
 .sponsor-logo img {
-    height: 4em; /* Set height for sponsor logos */
-    width: auto; /* Maintain aspect ratio */
+    height: 4em; 
+    width: auto; 
 }

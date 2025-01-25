@@ -1,10 +1,8 @@
-// Filename: Day.tsx
-
 import React, { useState } from 'react';
 import './Day.css';
 
 const Day: React.FC = () => {
-  const [isDay1, setIsDay1] = useState(true); // State to toggle between Day 1 and Day 2
+  const [isDay1, setIsDay1] = useState(true);
 
   // Data for Day 1
   const day1Content = [
@@ -28,7 +26,6 @@ const Day: React.FC = () => {
     "Sponsor Presentations",
   ];
 
-  // Select content based on the current day
   const currentContent = isDay1 ? day1Content : day2Content;
 
   return (

@@ -29,7 +29,7 @@ const Day: React.FC = () => {
   const currentContent = isDay1 ? day1Content : day2Content;
 
   return (
-    <div className="day-container">
+    <div className="day-container" name="day">
       <h1 className="event-title">2025 EVENT CONTENT</h1>
       <div className="day-switch">
         <div 

@@ -1,80 +1,151 @@
+/* Base styling for .day-container */
 .day-container {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     padding: 6% 20px 20px 20px;
-    max-width: 600px; 
-    margin: auto; 
-    border-radius: 10px; 
+    max-width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    width: 100%; /* Ensure it takes up 100% of the width in smaller screens */
 }
 
+/* Event title styling */
 .event-title {
-    font-size: 2em; 
+    font-size: 2em;
     margin-bottom: 15px;
-    color: #113ed0; 
-    text-align: center; 
+    color: #113ed0;
+    text-align: center;
 }
 
+/* Day switch button styling */
 .day-switch {
-    display: flex; 
-    margin-bottom: 20px; 
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
 }
 
 .day-option {
-    padding: 10px 30px; 
-    cursor: pointer; 
+    padding: 10px 30px;
+    cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
     margin: 0 5px;
-    font-weight: bold; 
+    font-weight: bold;
     border: 1px solid rgba(241, 179, 7, 0.9);
-    color: #333; 
+    color: #333;
 }
 
 .day-option.active {
-    background-color: #113ed0; 
-    color: white; 
+    background-color: #113ed0;
+    color: white;
     border: none;
 }
 
 .day-box {
-    background-color: rgba(255, 255, 255, 0.9); 
-    padding: 20px; 
-    width: 100%; 
-    margin-top: 20px; 
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
     border: 3px solid black;
 }
 
 .day-header {
-    font-size: 1.5em; 
+    font-size: 1.5em;
     margin: 10px 0;
     color: #fff;
-    text-align: left; 
-    border-radius: 5px; 
+    text-align: left;
+    border-radius: 5px;
 }
-.something{
+
+.something {
     background-color: #113ed0;
     padding: 10px;
 }
+
 .day-subheader {
-    font-size: 1.2em; 
-    margin: 10px 0; 
-    color: #fff; 
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #fff;
     text-align: left;
     border-radius: 5px;
 }
 
 .schedule-list {
-    list-style-type: disc; 
-    padding-left: 20px; 
-    margin: 0; 
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
     cursor: grab;
 }
 
 .schedule-item {
     margin: 5px 0;
     text-align: left;
-    padding: 5px; 
-    transition: background-color 0.3s ease; 
+    padding: 5px;
+    transition: background-color 0.3s ease;
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .day-container {
+        padding: 4% 15px 15px 15px;
+        max-width: 90%; 
+    }
+
+    .event-title {
+        font-size: 1.5em;
+    }
+
+    .day-switch {
+        flex-direction: row; 
+        gap: 10px; 
+    }
+
+    .day-option {
+        width: auto; 
+        padding: 10px;
+    }
+
+    .day-header {
+        font-size: 1.3em;
+    }
+
+    .day-subheader {
+        font-size: 1.1em;
+    }
+
+    .schedule-list {
+        padding-left: 15px;
+    }
+
+    .schedule-item {
+        font-size: 0.9em; 
+    }
+}
+
+@media (max-width: 480px) {
+    .day-container {
+        padding: 3% 10px 10px 10px;
+        padding-top: 1em; /* Add top padding of 1em */
+    }
+
+    .event-title {
+        font-size: 1.2em;
+    }
+
+    .day-header {
+        font-size: 1.2em;
+    }
+
+    .day-subheader {
+        font-size: 1em;
+    }
+
+    .schedule-list {
+        padding-left: 10px;
+    }
+
+    .schedule-item {
+        font-size: 0.85em;
+    }
+}

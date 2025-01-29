@@ -8,21 +8,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto; /* Center everything */
 }
 
 .hero-content {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
-    width: 100%;
+    align-items: flex-start; /* Ensure left alignment for the first container */
     max-width: 1000px;
+    width: 100%;
+    margin: 0 auto; /* Keep everything centered */
 }
 
 .hero-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 50%;
+    max-width: 50%; /* Left container aligned as is */
     height: 100%; 
 }
 
@@ -72,6 +74,7 @@
     border: 1px solid white; 
     color: white; 
     padding: 12px 30px; 
+    cursor: pointer;
 }
 
 .border-button:hover {
@@ -88,7 +91,7 @@
     justify-content: center; 
     max-width: 300px; 
     height: 100%; 
-    margin-top: 1.3em;
+    margin-top: 4rem; /* Space added on top */
 }
 
 .countdown-container h3 {
@@ -127,6 +130,52 @@
 }
 
 .full-background {
+    cursor: pointer;
     background-color: white; 
     color: #000;
 }
+
+/* Debugging, Make sure buttons are not being overlaid */
+.btn, .border-button {
+    z-index: 10; /* Ensure buttons are clickable */
+    position: relative;
+}
+
+@media (max-width: 850px) {
+    .hero-content {
+        flex-direction: column; /* Stack containers vertically on smaller screens */
+        align-items: center;
+    }
+    .hero-text {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+    .countdown-container {
+        max-width: 100%;
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .hero-text h1 {
+        font-size: 50px;
+        max-height: 400px;
+        margin: auto;
+    }
+    .hero-text p {
+        font-size: 16px; 
+        text-align: center;
+        max-width: 100%;
+    }
+    .event-info {
+        margin: 0 auto; 
+        text-align: left;
+    }
+    .btn, .border-button {
+        margin: 0 auto;
+        margin-top: 1em;
+        display: block;
+        box-shadow: 3px 3px 0px 0px white; 
+        padding: 8px;
+    }
+}
+

@@ -30,3 +30,17 @@
     max-width: 720px; 
     line-height: 1.5; 
 }
+
+/* media query */
+@media (max-width: 650px) {
+    .speakers-content{
+        max-width: 400px;
+    }
+    .speakers-content h2{
+        font-size: 30px;
+    }
+    .speakers-content p {
+        font-size: 15px;
+        max-width: 400px; 
+    }
+}

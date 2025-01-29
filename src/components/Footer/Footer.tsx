@@ -5,14 +5,14 @@ import logo from '../../assets/logo.png'
 
 const Footer: React.FC = () => {
   return (
-   <div className="motherf">
+   <div className="motherf" name="footer">
      <div className="footer-container">
       <div className="footer-left">
         <div className="footer-logo">
           <img src={logo} alt="HRCRUNCH Logo" className="logo" />
         </div>
         <p className="footer-description">
-          HRCRUNCH is dedicated to providing the best resources and networking opportunities for HR professionals.
+          HRCRUNCH is dedicated to providing the best resources and networking opportunities for professionals.
         </p>
       </div>
       <div className="footer-center">
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <hr className="footer-divider" />
-      <p className="footer-copyright">© 2023 – 2025 HRCRUNCH Limited. All rights reserved.</p>
+      <p className="footer-copyright">© 2025 HRCRUNCH Limited. All rights reserved.</p>
     </div>
    </div>
   );

@@ -48,4 +48,18 @@
     max-width: 600px; 
 }
 
+/* media query */
+@media (max-width: 650px) {
+    .about{
+        display: flex;
+        flex-direction: column
+    }
+    .about h3 {
+        font-size: 30px;
+    }
+    .about-left{
+        margin-bottom: 1.5em;
+    }
+}
+
 

@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import './Ticket.css';
 
 const tickets = [
-    { id: 1, name: 'Student Ticket', price: '₦5,000' },
-    { id: 2, name: 'Early Bird Ticket', price: '₦10,000' },
-    { id: 3, name: 'Duo Ticket', price: '₦19,000' },
-    { id: 4, name: 'Quintet [Group of five]', price: '₦45,000' },
-    { id: 5, name: 'Circle [Group of ten]', price: '₦80,000' },
-    { id: 6, name: 'Corporate Package (5 Tickets)', price: '₦100,000' },
-    { id: 7, name: 'Corporate Package (10 Tickets)', price: '₦180,000' },
+    { id: 1, name: 'Student Ticket (Early Bird)', price: '₦5,000' },
+    { id: 2, name: 'Early Bird Ticket (Early Bird)', price: '₦10,000' },
+    { id: 3, name: 'Duo Ticket (Early Bird)', price: '₦19,000' },
+    { id: 4, name: 'Quintet [Group of five] (Early Bird)', price: '₦45,000' },
+    { id: 5, name: 'Circle [Group of ten] (Early Bird)', price: '₦80,000' },
+    { id: 6, name: 'Corporate Package (5 Tickets) (Early Bird)', price: '₦100,000' },
+    { id: 7, name: 'Corporate Package (10 Tickets) (Early Bird)', price: '₦180,000' },
     { id: 7, name: '', price: '₦' },
 ];
 
@@ -30,7 +30,7 @@ const Ticket: React.FC = () => {
     };
 
     return (
-        <div className="ticket-container">
+        <div className="ticket-container" name="ticket">
             <div className="ticket-options">
                 {tickets.map(ticket => (
                     <div

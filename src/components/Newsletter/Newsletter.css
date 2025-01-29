@@ -1,50 +1,77 @@
 .newsletter-container {
     max-width: 1000px;
     margin: 50px auto;
-    padding: 20px; 
+    padding: 20px;
     border-radius: 10px;
     text-align: center;
+    width: 90%;
 }
 
 .newsletter-header {
-    font-size: 1.4em;
-    font-weight: 400;
-    margin-bottom: 25px; 
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1.4;
 }
 
 .input-container {
-    display: flex; 
-    justify-content: center; 
-    margin-bottom: 1.8em;
-    gap: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 1.5em;
 }
 
 .newsletter-input {
     height: 50px;
     border: 1px solid #ccc;
     padding: 0 15px;
-    font-size: 1em; 
-    flex: 1; 
+    font-size: 1em;
+    flex: 1;
+    border-radius: 5px 0 0 5px;
 }
 
 .signup-button {
-    height: 50px; 
-    border: 1px solid #28a745;
-    background-color: #28a745;
-    color: white; 
+    height: 50px;
+    border: 1px solid orange;
+    background-color: orange;
+    color: white;
     border-radius: 0 5px 5px 0;
-    padding: 0 20px; 
-    cursor: pointer; 
-    font-size: 1em; 
-    transition: background-color 0.3s; 
+    padding: 0 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    font-weight: 500;
 }
 
+/* Improve button hover effect */
 .signup-button:hover {
-    background-color: #218838;
+    background-color: rgb(235, 154, 5);
 }
 
-.privacy-statement {
-    font-size: 0.9em;
-    color: #666; 
-    margin-top: 20px; 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .newsletter-header {
+        font-size: 1.4em;
+    }
+
+    .newsletter-input, .signup-button {
+        height: 45px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 600px) {
+    .newsletter-header {
+        font-size: 1em;
+    }
+
+    .newsletter-input, .signup-button {
+        height: 40px;
+        font-size: 0.85em;
+    }
+
+    .privacy-statement {
+        font-size: 0.7em;
+    }
 }

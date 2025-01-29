@@ -2,7 +2,7 @@ import './Speakers.css';
 
 const Speakers = () => {
   return (
-    <div className="speakers-container">
+    <div className="speakers-container" name="speakers">
       <div className="speakers-content">
         <h2>
         OUR<span> SPEAKERS</span> 

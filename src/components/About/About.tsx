@@ -25,7 +25,7 @@ const About = () => {
   }, []);
 
   return (
-    <div id="about-section" className='about'>
+    <div id="about-section" className='about' name="about">
       <motion.div
         className="about-left"
         initial={{ opacity: 0, y: -50 }} 
@@ -33,7 +33,7 @@ const About = () => {
         transition={{ duration: 1.5 }} 
       >
         <h3>WHO IS HR CRUNCH?</h3>
-        <p>HR Crunch 2.0 brings together professionals, job seekers, and thought leaders for a unique fusion of career development, personal branding, and interactive experiences. <br /> With workshops, panels, networking, games, performances, and more, this event is designed to "ignite" the passion, creativity, and professional growth of attendees who would impact Africa and the world.</p>
+        <p>HR Crunch 2.0 brings together professionals, job seekers, and thought leaders for a unique fusion of career development, personal branding, and interactive experiences. <br /> <span> With workshops, panels, networking, games, performances, and more, this event is designed to "ignite" the passion, creativity, and professional growth of attendees who would impact Africa and the world.</span></p>
       </motion.div>
       <motion.div
         className="about-right"

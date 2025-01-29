@@ -7,7 +7,7 @@ import CountdownTimer from "../Hero/CountdownTimer";
 
 const Hero = () => {
 
-  const whatsappNumberSponsor = '09061294102'; 
+  const whatsappNumberSponsor = '08099448709'; 
   const messageSponsor = 'I would like to become a sponsor for The FUSE event.'; 
 
   const handleSponsorClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -17,7 +17,7 @@ const Hero = () => {
     window.open(url, '_blank');
   };
 
-  const whatsappNumberTicket = '09061294102'; 
+  const whatsappNumberTicket = '08099448709'; 
 const messageTicket = 'I would like to buy a ticket for The FUSE event.'; 
 
 const handleTicketClick = (event: React.MouseEvent<HTMLButtonElement>) => {

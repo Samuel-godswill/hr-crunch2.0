@@ -6,7 +6,7 @@ import { Link } from 'react-scroll'; // Correct import
 import menu from '../../assets/menu.png';
 
 const Navbar = () => {
-  const whatsappNumber = '09061294102'; 
+  const whatsappNumber = '08099448709'; 
   const message = 'I would like to become a sponsor for The FUSE event..'; 
 
   const handleSponsorClick = () => {
@@ -14,7 +14,7 @@ const Navbar = () => {
     window.open(url, '_blank'); 
   };
 
-  const whatsappNumberTicket = '09061294102'; 
+  const whatsappNumberTicket = '08099448709'; 
   const messageTicket = 'I would like to buy a ticket for The FUSE event.'; 
   
   const handleTicketClick = () => {

@@ -21,7 +21,7 @@ const Ticket: React.FC = () => {
     const handleBuyTicket = () => {
         if (selectedTicket) {
             const message = `Hello! I would like to purchase the ${selectedTicket}.`;
-            const whatsappUrl = `https://wa.me/+2349061294102?text=${encodeURIComponent(message)}`;
+            const whatsappUrl = `https://wa.me/+2348099448709?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
         } else {
             alert('Please select a ticket before proceeding.');

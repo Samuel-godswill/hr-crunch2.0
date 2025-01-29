@@ -9,11 +9,20 @@ const Navbar = () => {
   const whatsappNumber = '09061294102'; 
   const message = 'I would like to become a sponsor for The FUSE event..'; 
 
-  const handleTicketClick = () => {
+  const handleSponsorClick = () => {
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank'); 
   };
 
+  const whatsappNumberTicket = '09061294102'; 
+  const messageTicket = 'I would like to buy a ticket for The FUSE event.'; 
+  
+  const handleTicketClick = () => {
+    const url = `https://wa.me/${whatsappNumberTicket}?text=${encodeURIComponent(messageTicket)}`;
+    console.log("Opening ticket purchase URL:", url); 
+    window.open(url, '_blank');
+  };
+  
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -26,9 +35,10 @@ const Navbar = () => {
   }, []);
 
   const [mobileMenu, setMobileMenu] = useState(false);
-  const toggleMenu = () =>{
-    mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
-  }
+  const toggleMenu = () => {
+    setMobileMenu((prev) => !prev);
+  };
+  
 
   return (
     <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
@@ -38,13 +48,16 @@ const Navbar = () => {
         <li><Link to="about" smooth={true} offset={-240} duration={500}>About</Link></li>
         <li><Link to="speakers" smooth={true} offset={-70} duration={500}>Speakers</Link></li>
         <li>
-          <Link to="ticket" smooth={true} offset={-130} duration={500} className="ticket-button">
-            GET TICKET
-            <img src={ticket} alt="Ticket" className="ticket-icon" />
-          </Link>
-        </li>
+  <Link to="ticket" smooth={true} offset={-130} duration={500} className="ticket-button">
+    <button onClick={handleTicketClick} className="ticket-button">
+      GET TICKET
+      <img src={ticket} alt="Ticket" className="ticket-icon" />
+    </button>
+  </Link>
+</li>
+
         <li>
-          <button className="sponsor-button" onClick={handleTicketClick}>
+          <button className="sponsor-button" onClick={handleSponsorClick}>
             BECOME A SPONSOR
           </button>
         </li>

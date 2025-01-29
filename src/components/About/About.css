@@ -47,7 +47,21 @@
     font-size: 16px; 
     max-width: 600px; 
 }
+.about p span {
+    display: block; /* Makes it a block element so margin-top works */
+    margin-top: 0.9em; /* Adds spacing above the span */
+}
 
+/* media query */
+@media (max-width: 650px) {
+    .about{
+        display: flex;
+        flex-direction: column
+    }
+    .about h3 {
+        font-size: 30px;
+
+    }
 /* media query */
 @media (max-width: 650px) {
     .about{
@@ -61,5 +75,4 @@
         margin-bottom: 1.5em;
     }
 }
-
-
+}

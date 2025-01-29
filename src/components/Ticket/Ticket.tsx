@@ -9,7 +9,6 @@ const tickets = [
     { id: 5, name: 'Circle [Group of ten] (Early Bird)', price: '₦80,000' },
     { id: 6, name: 'Corporate Package (5 Tickets) (Early Bird)', price: '₦100,000' },
     { id: 7, name: 'Corporate Package (10 Tickets) (Early Bird)', price: '₦180,000' },
-    { id: 7, name: '', price: '₦' },
 ];
 
 const Ticket: React.FC = () => {

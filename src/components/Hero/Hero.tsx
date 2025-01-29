@@ -4,20 +4,28 @@ import ThreeScene from "./ThreeScene";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarAlt, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import CountdownTimer from "../Hero/CountdownTimer";
-import { Link } from 'react-scroll'; // Removed unused Element import
 
 const Hero = () => {
 
   const whatsappNumberSponsor = '09061294102'; 
   const messageSponsor = 'I would like to become a sponsor for The FUSE event.'; 
 
-  // Typing the event parameter as React.MouseEvent
   const handleSponsorClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.stopPropagation();
     const url = `https://wa.me/${whatsappNumberSponsor}?text=${encodeURIComponent(messageSponsor)}`;
-    console.log("Opening sponsor URL:", url); // Debugging log
+    console.log("Opening sponsor URL:", url); 
     window.open(url, '_blank');
   };
+
+  const whatsappNumberTicket = '09061294102'; 
+const messageTicket = 'I would like to buy a ticket for The FUSE event.'; 
+
+const handleTicketClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+  event.stopPropagation();
+  const url = `https://wa.me/${whatsappNumberTicket}?text=${encodeURIComponent(messageTicket)}`;
+  console.log("Opening ticket purchase URL:", url); 
+  window.open(url, '_blank');
+};
 
   return (
     <div className="hero container" data-name="hero">
@@ -46,13 +54,14 @@ const Hero = () => {
           <h3>Countdown to <span>THE FUSE</span></h3>
           <p>Buy your early bird tickets now!</p>
           <CountdownTimer />
-          <Link to="ticket" smooth={true} offset={0} duration={500}
+          <button 
             className="btn full-background" 
+            onClick={handleTicketClick}
             aria-label="Get tickets for The FUSE event"
           >
             GET TICKET
             <img src={ticket} alt="Ticket" className="ticket-icon" />
-          </Link>
+          </button>
         </div>
       </div>
     </div>

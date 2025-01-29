@@ -156,6 +156,9 @@
 }
 
 @media (max-width: 650px) {
+    .hero {
+        padding-top: 9em; 
+    }
     .hero-text h1 {
         font-size: 50px;
         max-height: 400px;

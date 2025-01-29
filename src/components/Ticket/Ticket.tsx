@@ -30,7 +30,7 @@ const Ticket: React.FC = () => {
     };
 
     return (
-        <div className="ticket-container" name="ticket">
+        <div className="ticket-container" data-name="ticket">
             <div className="ticket-options">
                 {tickets.map(ticket => (
                     <div

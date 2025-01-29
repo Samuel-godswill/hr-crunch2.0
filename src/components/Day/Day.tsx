@@ -29,7 +29,7 @@ const Day: React.FC = () => {
   const currentContent = isDay1 ? day1Content : day2Content;
 
   return (
-    <div className="day-container" name="day">
+    <div className="day-container">
       <h1 className="event-title">2025 EVENT CONTENT</h1>
       <div className="day-switch">
         <div 
@@ -47,8 +47,8 @@ const Day: React.FC = () => {
       </div>
       <div className="day-box">
         <div className="something">
-        <h2 className="day-header">{isDay1 ? "Friday" : "Saturday"}</h2>
-        <h3 className="day-subheader">{isDay1 ? "28th March, 2025" : "29th March, 2025"}</h3>
+          <h2 className="day-header">{isDay1 ? "Friday" : "Saturday"}</h2>
+          <h3 className="day-subheader">{isDay1 ? "28th March, 2025" : "29th March, 2025"}</h3>
         </div>
         <ul className="schedule-list">
           {currentContent.map((item, index) => (

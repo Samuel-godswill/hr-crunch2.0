@@ -2,7 +2,7 @@ import './Navbar.css';
 import logo from '../../assets/logo.png';
 import ticket from '../../assets/ticket.png';
 import { useEffect, useState } from 'react';
-import { Link, Element } from 'react-scroll'; // Correct import
+import { Link } from 'react-scroll'; // Correct import
 import menu from '../../assets/menu.png';
 
 const Navbar = () => {

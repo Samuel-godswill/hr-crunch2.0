@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
-import { FontLoader } from 'three/examples/jsm/loaders/FontLoader';
-import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry';
+import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
+import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js';
+
 
 const ThreeScene: React.FC = () => {
   const mountRef = useRef<HTMLDivElement | null>(null);
@@ -45,7 +46,7 @@ const ThreeScene: React.FC = () => {
     camera.position.z = 5;
 
     const fontLoader = new FontLoader();
-    fontLoader.load('/path/to/font.json', (font) => {
+    fontLoader.load('/public/path/to/font.json', (font) => {
       const textMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff });
       const textMesh = new THREE.Mesh(new TextGeometry('00:00:00', {
         font: font,
@@ -91,7 +92,7 @@ const ThreeScene: React.FC = () => {
         renderer.render(scene, camera);
       };
       animate();
-    }, undefined, (error) => {
+    }, undefined, (error: unknown) => {
       console.error('An error happened while loading the font:', error);
     });
 

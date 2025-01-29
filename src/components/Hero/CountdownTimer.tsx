@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";  // Removed React import
 import { motion } from "framer-motion";
 
 const CountdownTimer = () => {
@@ -67,7 +67,7 @@ const CountdownTimer = () => {
           {timeLeft.minutes}
         </motion.h1>
         <span>Minutes</span>
-      </div>{" "}
+      </div>
       <div>
         <motion.h1
           key={timeLeft.seconds}

@@ -5,12 +5,18 @@ import gpfoods from '../../assets/gpfoods.png';
 import uac from '../../assets/UAC-SMART-LOGO-01.png';
 import pade from '../../assets/Pade HR.png';
 
-const images = [
-  { src: '/src/assets/Toniloba Itabiyi.jpeg', name: 'Toniloba Itabiyi' },
+interface Speaker {
+  src: string;
+  name: string;
+  title?: string; 
+}
+
+const images: Speaker[] = [
+  { src: '/src/assets/hrboss.jpeg', name: 'Joel Moses Babatunde', title: 'Convener, HR Crunch' },
   { src: '/src/assets/Daniel Emeka.jpeg', name: 'Daniel Emeka' },
   { src: '/src/assets/Seyi Olaniyan.JPG', name: 'Seyi Olaniyan' },
   { src: '/src/assets/Aproko Doctor.jpeg', name: 'Aproko Doctor' },
-  { src: '/src/assets/Anthony Eigbe.jpeg', name: 'Anthony Eigbe' },
+  { src: '/src/assets/Yemi Faseun.JPG', name: 'Yemi Faseun' },
   { src: '/src/assets/David Odunlami.jpeg', name: 'David Odunlami' },
   { src: '/src/assets/Eniola Taiwo.jpeg', name: 'Eniola Taiwo' },
   { src: '/src/assets/Emmanuel Faith.JPG', name: 'Emmanuel Faith' },
@@ -18,20 +24,17 @@ const images = [
   { src: '/src/assets/Seye Bandele.jpeg', name: 'Seye Bandele' },
   { src: '/src/assets/Seyifunmi Oderinde.JPG', name: 'Seyifunmi Oderinde' },
   { src: '/src/assets/Yewande Jinadu.JPG', name: 'Yewande Jinadu' },
-  { src: '/src/assets/Yemi Faseun.JPG', name: 'Yemi Faseun' },
-  { src: '/src/assets/Precious Dahunsi.jpeg', name: 'Precious Dahunsi' },
-  { src: '/src/assets/Kofoworola Kayode.jpeg', name: 'Kofoworola Kayode' },
-  { src: '/src/assets/Ngozi Chukwu.jpeg', name: 'Ngozi Chukwu' },
 ];
 
-const Attend = () => {
+const Attend: React.FC = () => {
   return (
-    <div className="attend-container" name="attend">
+    <div className="attend-container" id="attend">  {/* Changed 'name' to 'id' */}
       <div className="image-grid">
         {images.map((image, index) => (
           <div className="image-item" key={index}>
             <img src={image.src} alt={image.name} />
             <span className="image-name">{image.name}</span>
+            {image.title && <span className="image-title">{image.title}</span>}
           </div>
         ))}
       </div>

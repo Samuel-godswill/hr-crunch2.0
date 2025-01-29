@@ -4,16 +4,15 @@ import ThreeScene from "./ThreeScene";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarAlt, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import CountdownTimer from "../Hero/CountdownTimer";
-import { Link, Element } from 'react-scroll'; 
-
+import { Link } from 'react-scroll'; // Removed unused Element import
 
 const Hero = () => {
 
   const whatsappNumberSponsor = '09061294102'; 
   const messageSponsor = 'I would like to become a sponsor for The FUSE event.'; 
 
-
-  const handleSponsorClick = (event) => {
+  // Typing the event parameter as React.MouseEvent
+  const handleSponsorClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.stopPropagation();
     const url = `https://wa.me/${whatsappNumberSponsor}?text=${encodeURIComponent(messageSponsor)}`;
     console.log("Opening sponsor URL:", url); // Debugging log
@@ -21,7 +20,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="hero container" name="hero">
+    <div className="hero container" data-name="hero">
       <ThreeScene />
       <div className="hero-content">
         <div className="hero-text">

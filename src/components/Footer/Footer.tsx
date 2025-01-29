@@ -5,7 +5,7 @@ import logo from '../../assets/logo.png'
 
 const Footer: React.FC = () => {
   return (
-   <div className="motherf" name="footer">
+   <div className="motherf" id="footer"> {/* Changed 'name' to 'id' */}
      <div className="footer-container">
       <div className="footer-left">
         <div className="footer-logo">
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
         <p>hrcrunch@gmail.com</p>
       </div>
       <div className="connected">
-      <h3>Stay Connected</h3>
+        <h3>Stay Connected</h3>
         <div className="footer-socials">
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
             <FaFacebook />

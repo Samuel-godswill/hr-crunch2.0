@@ -6,7 +6,7 @@ import uac from '../../assets/UAC-SMART-LOGO-01.png';
 import pade from '../../assets/Pade HR.png';
 import hrboss from '../../assets/hrboss.jpeg';
 import daniel from '../../assets/Daniel Emeka.jpeg';
-import seyi from '../../assets/Seye Bandele.jpeg';
+import seyi from '../../assets/Seyi Olaniyan.jpeg';
 import aproko from '../../assets/Aproko Doctor.jpeg';
 import yemi from '../../assets/Yemi Faseun.jpeg';
 import david from '../../assets/David Odunlami.jpeg';
@@ -41,7 +41,7 @@ const images: Speaker[] = [
 
 const Attend: React.FC = () => {
   return (
-    <div className="attend-container" id="attend">  {/* Changed 'name' to 'id' */}
+    <div className="attend-container" id="attend"> 
       <div className="image-grid">
         {images.map((image, index) => (
           <div className="image-item" key={index}>
@@ -53,7 +53,7 @@ const Attend: React.FC = () => {
       </div>
       <div className="previous-sponsors">
         <h3>
-          <span className="line" /> Previous Sponsors <span className="line" />
+          Previous Sponsors
         </h3>
       </div>
       <div className="sponsor-logos">

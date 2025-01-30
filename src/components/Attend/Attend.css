@@ -55,13 +55,6 @@
     letter-spacing: 1px; 
   }
   
-  .line {
-    flex: 1;
-    height: 2px;
-    background-color: #d91717;
-    margin: 0 10px;
-  }
-  
   .sponsor-logos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

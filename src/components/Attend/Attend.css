@@ -77,10 +77,6 @@
       padding: 10px 0;
   }
 
-  .sponsor-logos {
-    gap: 20px; 
-  }
-
   .image-item {
       flex: 0 0 90%;
       scroll-snap-align: start;
@@ -92,6 +88,15 @@
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
+
+  .sponsor-logos {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 8px; 
+    max-width: 100%; 
+    padding: 0 10px; 
+}
 
   .sponsor-logo img {
       height: 1.9em;

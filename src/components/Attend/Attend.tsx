@@ -4,6 +4,7 @@ import mtn from '../../assets/mtn.png';
 import gpfoods from '../../assets/gpfoods.png';
 import uac from '../../assets/UAC-SMART-LOGO-01.png';
 import pade from '../../assets/Pade HR.png';
+import selar from '../../assets/selar-logo.svg';
 import hrboss from '../../assets/hrboss.jpeg';
 import daniel from '../../assets/Daniel Emeka.jpeg';
 import seyi from '../../assets/Seyi Olaniyan.jpeg';
@@ -68,6 +69,9 @@ const Attend: React.FC = () => {
         </div>
         <div className="sponsor-logo">
           <img src={pade} alt="Pade HR" />
+        </div>
+        <div className="sponsor-logo">
+          <img src={selar} alt="Selar" />
         </div>
       </div>
     </div>

@@ -20,9 +20,9 @@ const Ticket: React.FC = () => {
 
     const handleBuyTicket = () => {
         if (selectedTicket) {
-            const message = `Hello! I would like to purchase the ${selectedTicket}.`;
-            const whatsappUrl = `https://wa.me/+2348099448709?text=${encodeURIComponent(message)}`;
-            window.open(whatsappUrl, '_blank');
+            const selarUrl = 'https://selar.co/HRCrunch2025';
+            console.log(`Navigating to ticket purchase URL for ${selectedTicket}:`, selarUrl);
+            window.open(selarUrl, '_blank');
         } else {
             alert('Please select a ticket before proceeding.');
         }

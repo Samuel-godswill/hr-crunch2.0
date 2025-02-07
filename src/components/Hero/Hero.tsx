@@ -17,15 +17,12 @@ const Hero = () => {
     window.open(url, '_blank');
   };
 
-  const whatsappNumberTicket = '08099448709'; 
-const messageTicket = 'I would like to buy a ticket for The FUSE event.'; 
-
-const handleTicketClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-  event.stopPropagation();
-  const url = `https://wa.me/${whatsappNumberTicket}?text=${encodeURIComponent(messageTicket)}`;
-  console.log("Opening ticket purchase URL:", url); 
-  window.open(url, '_blank');
-};
+  const handleTicketClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.stopPropagation();
+    const url = 'https://selar.co/HRCrunch2025';
+    console.log("Navigating to ticket purchase URL:", url); 
+    window.open(url, '_blank');
+  };
 
   return (
     <div className="hero container" data-name="hero">

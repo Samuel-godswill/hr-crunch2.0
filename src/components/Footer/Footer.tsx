@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <hr className="footer-divider" />
-      <p className="footer-copyright">© 2025 HRCRUNCH Limited. All rights reserved.</p>
+      <p className="footer-copyright">© 2025 AWS Limited. All rights reserved.</p>
     </div>
    </div>
   );

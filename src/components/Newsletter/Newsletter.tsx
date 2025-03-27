@@ -37,7 +37,7 @@ const Newsletter: React.FC = () => {
   return (
     <div className="newsletter-container">
       <h2 className="newsletter-header">
-        Don’t miss out on THE FUSE experience. Sign up to receive updates about HRCRUNCH 2025!
+        Don’t miss out on THE FUSE experience. Sign up to receive updates about AWS 2025!
       </h2>
       <div className="input-container">
         <input
@@ -53,7 +53,7 @@ const Newsletter: React.FC = () => {
       </div>
       {message && <p className="subscription-message">{message}</p>}
       <p className="privacy-statement">
-        We’re committed to your privacy. HRCRUNCH uses the information you provide to us to contact you about THE FUSE content and events. You may unsubscribe from these communications at any time. For more information, check out our privacy policy.
+        We’re committed to your privacy. African Workforce Summit uses the information you provide to us to contact you about THE FUSE content and events. You may unsubscribe from these communications at any time. For more information, check out our privacy policy.
       </p>
     </div>
   );

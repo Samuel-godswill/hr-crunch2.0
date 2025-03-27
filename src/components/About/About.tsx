@@ -34,8 +34,8 @@ const About = () => {
         animate={isVisible ? { opacity: 1, y: 0 } : {}} 
         transition={{ duration: 1.5 }} 
       >
-        <h3>WHO IS HR CRUNCH?</h3>
-        <p>HR Crunch 2.0 brings together professionals, job seekers, and thought leaders for a unique fusion of career development, personal branding, and interactive experiences. <br /> <span>With workshops, panels, networking, games, performances, and more, this event is designed to "ignite" the passion, creativity, and professional growth of attendees who would impact Africa and the world.</span></p>
+        <h3>WHAT IS AWS?</h3>
+        <p>African Workforce Summit brings together professionals, job seekers, and thought leaders for a unique fusion of career development, personal branding, and interactive experiences. <br /> <span>With workshops, panels, networking, games, performances, and more, this event is designed to "ignite" the passion, creativity, and professional growth of attendees who would impact Africa and the world.</span></p>
       </motion.div>
       <motion.div
         className="about-right"

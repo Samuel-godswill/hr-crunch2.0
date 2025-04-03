@@ -5,6 +5,7 @@
     border-radius: 10px;
     text-align: center;
     width: 90%;
+    color: #fff;
 }
 
 .newsletter-header {
@@ -42,6 +43,10 @@
     font-size: 1em;
     transition: background-color 0.3s;
     font-weight: 500;
+}
+.privacy-statement{
+    font-weight: 200;
+    font-size: 0.9em;
 }
 
 /* Improve button hover effect */

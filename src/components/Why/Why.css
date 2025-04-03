@@ -1,7 +1,8 @@
 .why-container {
     display: flex;
     height: auto;
-    background-color: #113ed0;
+    background-color: #222969;
+    color: #fff;
     padding: 60px 20px;
     font-weight: 300;
 }

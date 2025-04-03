@@ -7,14 +7,14 @@
     max-width: 50%;
     margin: auto;
     border-radius: 10px;
-    width: 100%; /* Ensure it takes up 100% of the width in smaller screens */
+    width: 100%; 
 }
 
 /* Event title styling */
 .event-title {
     font-size: 2em;
     margin-bottom: 15px;
-    color: #113ed0;
+    color: #fff;
     text-align: center;
 }
 
@@ -32,13 +32,13 @@
     transition: background-color 0.3s ease;
     margin: 0 5px;
     font-weight: bold;
-    border: 1px solid rgba(241, 179, 7, 0.9);
-    color: #333;
+    border: 1px solid rgba(252, 252, 252, 0.9);
+    color: #fff;
 }
 
 .day-option.active {
-    background-color: #113ed0;
-    color: white;
+    background-color: #fff;
+    color: #222969;
     border: none;
 }
 
@@ -47,7 +47,6 @@
     padding: 20px;
     width: 100%;
     margin-top: 20px;
-    border: 3px solid black;
 }
 
 .day-header {
@@ -59,7 +58,7 @@
 }
 
 .something {
-    background-color: #113ed0;
+    background-color: #222969;
     padding: 10px;
 }
 

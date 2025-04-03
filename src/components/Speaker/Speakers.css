@@ -1,6 +1,6 @@
 .speakers-container {
-    background-color: #113ed0; 
-    color: white; 
+    background-color: #fff; 
+    color: #222969;
     padding: 30px; 
     text-align: left;
 }
@@ -17,7 +17,7 @@
 
 .speakers-content h2 {
     font-size: 40px; 
-    color: white;
+    color: #222969;
     margin-bottom: 0.4em;
     font-weight: 500;
 }

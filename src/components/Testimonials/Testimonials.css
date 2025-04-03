@@ -2,12 +2,11 @@
     margin: 80px auto;
     padding: 4rem 0;
     width: 100%;
-    background-color: #113ed0;
+    background-color: #fff;
     overflow: hidden;
   }
   .testimonial-text{
     text-align: center;
-    color: #fff;
     font-weight: 400;
   }
   .testimonial-scroll {
@@ -23,6 +22,7 @@
     flex: 0 0 calc(80% - 20px); /* Adjust width for mobile view */
     max-width: 300px;
     background-color: #fff;
+    border: 1px solid #222969;
     border-radius: 8px;
     padding: 20px;
   }

@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #fff;
 }
 
 .ticket-options {
@@ -45,7 +46,7 @@
 .ticket-option p {
     margin-top: 1.5em;
     color: #fff;
-    background-color: rgb(9, 13, 235);
+    background-color: #222969;
     padding: 10px;
     border-radius: 5px;
     font-size: 0.9rem;

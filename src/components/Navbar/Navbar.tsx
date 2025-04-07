@@ -2,7 +2,7 @@ import './Navbar.css';
 import logo from '../../assets/logo.png';
 import ticket from '../../assets/ticket.png';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-scroll'; // Correct import
+import { Link } from 'react-scroll'; 
 import menu from '../../assets/menu.png';
 
 const Navbar = () => {
@@ -14,12 +14,11 @@ const Navbar = () => {
     window.open(url, '_blank'); 
   };
 
-  const whatsappNumberTicket = '08099448709'; 
-  const messageTicket = 'I would like to buy a ticket for The FUSE event.'; 
-  
-  const handleTicketClick = () => {
-    const url = `https://wa.me/${whatsappNumberTicket}?text=${encodeURIComponent(messageTicket)}`;
-    console.log("Opening ticket purchase URL:", url); 
+  const handleTicketClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.stopPropagation();
+    const url = 'https://selar.com/AWS2025';
+    console.log("Navigating to ticket purchase URL:", url);
+    
     window.open(url, '_blank');
   };
   

@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           <img src={logo} alt="HRCRUNCH Logo" className="logo" />
         </div>
         <p className="footer-description">
-          HRCRUNCH is dedicated to providing the best resources and networking opportunities for professionals.
+          AWS, Formerly HR CRUNCH is dedicated to providing the best resources and networking opportunities for professionals.
         </p>
       </div>
       <div className="footer-center">

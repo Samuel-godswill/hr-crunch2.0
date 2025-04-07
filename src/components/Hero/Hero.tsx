@@ -19,7 +19,7 @@ const Hero = () => {
 
   const handleTicketClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.stopPropagation();
-    const url = 'https://selar.co/HRCrunch2025';
+    const url = 'https://selar.com/AWS2025';
     console.log("Navigating to ticket purchase URL:", url); 
     window.open(url, '_blank');
   };
@@ -33,7 +33,7 @@ const Hero = () => {
           <p>Africa's biggest two-day event fusing career development, personal branding, and interactive experiences...</p>
           <div className="event-info">
             <span className="event-date">
-              <FontAwesomeIcon icon={faCalendarAlt} className="icon" /> 28TH - 29TH MARCH
+              <FontAwesomeIcon icon={faCalendarAlt} className="icon" /> 27TH - 28TH JUNE
             </span>
             <span className="event-location">
               <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" /> LAGOS, NIGERIA

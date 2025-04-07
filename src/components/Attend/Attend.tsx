@@ -54,7 +54,7 @@ const Attend: React.FC = () => {
       </div>
       <div className="previous-sponsors">
         <h3>
-          Previous Sponsors
+          Sponsors
         </h3>
       </div>
       <div className="sponsor-logos">

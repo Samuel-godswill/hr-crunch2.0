@@ -48,7 +48,7 @@ const Day: React.FC = () => {
       <div className="day-box">
         <div className="something">
           <h2 className="day-header">{isDay1 ? "Friday" : "Saturday"}</h2>
-          <h3 className="day-subheader">{isDay1 ? "28th March, 2025" : "29th March, 2025"}</h3>
+          <h3 className="day-subheader">{isDay1 ? "27th June, 2025" : "28th June, 2025"}</h3>
         </div>
         <ul className="schedule-list">
           {currentContent.map((item, index) => (
